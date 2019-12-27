@@ -34,6 +34,9 @@ def table_example():
             window['-TABLE-'].update(search.iloc[:how_many_items_to_show].values.tolist())
             #new_values = [x for x in names if search in x]  # do the filtering
             #window['-LIST-'].update(new_values)     # display in the listbox
+        elif values['-TABLE-'] != '':
+            window['-TEXT-MAG-'].update(values['-TABLE-'])
+            
         else:
             # display original unfiltered list
             #window['-LIST-'].update(names)
